@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Address Book CodeWorks</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header-->
+        <!-- Titulo -->
+        <h1>Agenda De Contactos</h1>
+        
+        <!--Barra de busqueda-->
+        <h2>Buscar Contacto</h2>
+        <div class="buscar">
+            <input type="text" id="busqueda" placeholder="Buscar Contacto">
+            <button type="submit" id="btnBuscar">Buscar Contacto</button>
+            <div class="listado-busqueda">
+                <p style="font-weight: bold;">Resultado de la Busqueda:</p>
+            </div>
+            <ul class="resultado" id="resultado" style="justify-content: space-between">
+            </ul>
+        <br>
+        <hr>
+        </div>
+       
+        <!--formulario-->
+        <h2>Crear Contacto</h2>
+        <div class="formulario">
+            <label for="nombre" style="font-weight: bold;">Nombre:</label>
+            <input type="text" id="nombre" class="nombre" placeholder="Ingrese aqui su nombre">
+            <label for="apellido" style="font-weight: bold;">Apellido:</label>
+            <input type="text" id="apellido" class="apellido" placeholder="Ingrese aqui su apellido">
+            <label for="telefono" style="font-weight: bold;">Telefono:</label>
+            <input type="text" class="telefono" placeholder="Ingrese aqui su telefono">
+            <label for="direccion" style="font-weight: bold;">Direccion:</label>
+            <input type="text" class="direccion" placeholder="Ingrese aqui su direccion">
+            <button class="btn-agregar-contacto">Guardar</button>
+        
+        <br>
+        <hr>
+        <br>
+        
+        <h2>Listado De Contactos</h2>
+        <br>
+            <!--listado de contactos-->
+            <div class="listado">
+                <div class="tarea">
+                    <p>Nombre</p>
+                    <p>Apellido</p>
+                    <p>Telefono</p>
+                    <p>Direccion</p>
+                    <span class="material-symbols-outlined icono"> delete </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

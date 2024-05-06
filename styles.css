@@ -1,0 +1,133 @@
+*,::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Alegreya', serif;
+}
+body{
+    background-color: #FDF1D1;
+    color: black;
+}
+::placeholder {
+    color: rgba(0, 0, 0, 0.4); 
+  }
+.container{
+    height: 50vh;
+    width: 60vw;
+    margin: 1rem auto;
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size:  2.5rem;
+}
+.container h2{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size:  1.5rem;
+}
+.buscar{
+    display: block;
+    width: 50%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+}
+.buscar input {
+    margin: 0.5rem 0rem;
+    line-height: 1.5rem;
+    background: #FDF9EF;
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+}
+.buscar button{
+    margin: 0.9rem 0rem;
+    line-height: 1.4rem;
+    outline: 0;
+    border: 0;
+    background-color: #555555;
+    color: white;
+    border-radius: 6px;
+    height: 1.7rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.buscar button:hover {
+    transform: scale(1.05); /* Cambia el tamaño según desees */
+  }
+.buscar input:active{
+    border-bottom: 1px solid black;
+}
+.buscar input:focus{
+    border-bottom: 1px solid black;
+}
+.tarea-busqueda{
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3rem;
+}
+.resultado{
+    justify-content: space-between
+}
+.formulario{
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+.formulario input{
+    margin: 0.5rem 0rem;
+    line-height: 1.5rem;
+    background: #FDF9EF;
+    outline: 0;
+    border: 0;
+    border-radius: 6px;
+}
+.formulario input:active{
+    border-bottom: 1px solid black;
+}
+.formulario input:focus{
+    border-bottom: 1px solid black;
+}
+.formulario button{
+    margin: 0.5rem 0rem;
+    line-height: 1.4rem;
+    outline: 0;
+    border: 0;
+    background-color: #555555;
+    color: white;
+    border-radius: 6px;
+    height: 1.7rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.formulario button:hover {
+    transform: scale(1.05); /* Cambia el tamaño según desees */
+  }
+.listado{
+    display: flex;
+    flex-direction: column;
+}
+.tarea{
+    display: flex;
+    font-weight: bold;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 3rem;
+}
+.icono{
+    display: inline-block;
+    color: red;
+    cursor: pointer;
+    transition: transform 0.3s ease; /*animacion: girar X seg ease infinite;*/
+}
+.icono:hover {
+    transform: scale(1.3); /* Cambia el tamaño según se desee */
+  }
